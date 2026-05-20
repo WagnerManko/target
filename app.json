@@ -2,6 +2,25 @@
   "expo": {
     "name": "target",
     "slug": "target",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "android": {
+      //Eedge removido da sdk55
+      //       What to do instead
+      // Since edge-to-edge is now the default and cannot be disabled, you must manage your layout to prevent content from overlapping with system bars: 
+      // Use Safe Areas: Wrap your application or specific screens in a SafeAreaView from the react-native-safe-area-context library. 
+      // Adjust Navigation Bars: If you need to handle the contrast or visibility of the navigation bar, use the expo-navigation-bar library or the new androidNavigationBar.enforceContrast property in app.json.
+      // Keyboard Management: Be aware that edge-to-edge mode can change how the keyboard pushes content up; you may need to use KeyboardAvoidingView or specialized libraries like react-native-keyboard-controller for better
+      
+      // "edgeToEdgeEnabled": true,
+      "package": "com.wmanko.target",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#3d44cd"
+      }
+    },
+    "ios": {
+      "icon": "./assets/ios-icon.png",
+      "bundleIdentifier": "com.wmanko.target"
+    },
   }
 }
