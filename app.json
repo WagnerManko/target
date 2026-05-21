@@ -16,7 +16,8 @@
       "bundleIdentifier": "com.wmanko.target"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      "expo-font"
     ]
   }
 }
